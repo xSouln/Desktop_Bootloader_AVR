@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30204.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivXBootloader-WPF", "DivXBootloader-WPF\DivXBootloader-WPF.csproj", "{888EC890-6CAA-4154-A1B1-EBEA616520F3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xLibWpf", "xLibWpf\xLibWpf.csproj", "{DEBE0863-3E66-4124-8E1A-0CB434227A5B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{888EC890-6CAA-4154-A1B1-EBEA616520F3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{888EC890-6CAA-4154-A1B1-EBEA616520F3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{888EC890-6CAA-4154-A1B1-EBEA616520F3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{888EC890-6CAA-4154-A1B1-EBEA616520F3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DEBE0863-3E66-4124-8E1A-0CB434227A5B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEBE0863-3E66-4124-8E1A-0CB434227A5B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEBE0863-3E66-4124-8E1A-0CB434227A5B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEBE0863-3E66-4124-8E1A-0CB434227A5B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E6BF7A8-0B56-4764-B4E2-FBC1BB1E6D29}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,142 @@
+﻿<Window x:Class="xLib.WindowTerminal"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:xLib"
+        mc:Ignorable="d"
+        Title="Terminal" Height="894.5" Width="1346.5" Background="#FF3F3F46">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="813*"/>
+            <RowDefinition Height="50*" MinHeight="50" MaxHeight="50"/>
+        </Grid.RowDefinitions>
+        <TabControl Margin="5" Background="#FF3F3F46" BorderBrush="#FFB26A22">
+            <TabItem Header="Log" Width="90" FontSize="18">
+                <Grid>
+                    <ListView x:Name="ListViewLog" FontSize="18" Background="#FF3F3F46" Foreground="#FFDEC316" BorderBrush="{x:Null}">
+                        <ListView.Resources>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsFocused" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.Resources>
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Time" DisplayMemberBinding="{Binding Time}" Width="200"/>
+                                <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Note}" Width="150"/>
+                                <GridViewColumn Header="Note" DisplayMemberBinding="{Binding Data}" Width="400"/>
+                                <GridViewColumn Header="Data" DisplayMemberBinding="{Binding ConvertData}" Width="500"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Info" Width="90" FontSize="18">                
+                <Grid>
+                    <ListView x:Name="ListViewInfo" FontSize="18" Background="#FF3F3F46" Foreground="#FFDEC316" BorderBrush="{x:Null}">
+                        <ListView.Resources>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsFocused" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.Resources>
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Time" DisplayMemberBinding="{Binding Time}" Width="200"/>
+                                <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Note}" Width="150"/>
+                                <GridViewColumn Header="Note" DisplayMemberBinding="{Binding Data}" Width="400"/>
+                                <GridViewColumn Header="Data" DisplayMemberBinding="{Binding ConvertData}" Width="500"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Data" Width="90" FontSize="18">
+                <Grid>
+                    <ListView x:Name="ListViewData" FontSize="18" Background="#FF3F3F46" Foreground="#FFDEC316" BorderBrush="{x:Null}">
+                        <ListView.Resources>
+                            <Style TargetType="{x:Type ListViewItem}">
+                                <Style.Triggers>
+                                    <Trigger Property="IsFocused" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                    <Trigger Property="IsMouseOver" Value="True">
+                                        <Setter Property="Background" Value="DarkBlue"/>
+                                    </Trigger>
+
+                                </Style.Triggers>
+                            </Style>
+                        </ListView.Resources>
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn Header="Time" DisplayMemberBinding="{Binding Time}" Width="200"/>
+                                <GridViewColumn Header="Type" DisplayMemberBinding="{Binding Note}" Width="150"/>
+                                <GridViewColumn Header="Note" DisplayMemberBinding="{Binding Data}" Width="400"/>
+                                <GridViewColumn Header="Data" DisplayMemberBinding="{Binding ConvertData}" Width="500"/>
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <TextBox x:Name="TextBoxData" HorizontalAlignment="Right" Margin="0,5,150,5" Grid.Row="1" TextWrapping="Wrap" Width="1029" SelectionOpacity="0" BorderBrush="#FFB26A22" Background="{x:Null}" Foreground="#FFDEC316" FontSize="20" TextAlignment="Right"/>
+        <Button x:Name="ButSend" Content="Send" Margin="0,5,5,5" BorderBrush="#FFB26A22" Background="#FF4F4F4F" FontSize="20" Foreground="#FFDEC316" HorizontalAlignment="Right" Width="140" Grid.Row="1" Click="ButSend_Click">
+            <Button.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="DarkBlue"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="DarkBlue"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Resources>
+        </Button>
+        <Button Content="Pause" Margin="5,5,0,5" BorderBrush="#FFB26A22" Background="#FF4F4F4F" FontSize="20" Foreground="#FFDEC316" HorizontalAlignment="Left" Width="140" Grid.Row="1">
+            <Button.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Style.Triggers>
+                        <Trigger Property="IsFocused" Value="True">
+                            <Setter Property="Background" Value="DarkBlue"/>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                            <Setter Property="Background" Value="DarkBlue"/>
+                        </Trigger>
+                    </Style.Triggers>
+                </Style>
+            </Button.Resources>
+        </Button>
+    </Grid>
+</Window>
