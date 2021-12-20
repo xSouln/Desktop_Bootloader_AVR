@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Controls;
 using xLibWpf.UI_Propertys;
-using static DivXBootloader_WPF.Types;
+using static Bootloader_AVR.Types;
 
-namespace DivXBootloader_WPF.UI_Propertys
+namespace Bootloader_AVR.UI_Propertys
 {
     public class UI_Handler
     {
