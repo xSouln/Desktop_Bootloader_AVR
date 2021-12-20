@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using xLib;
 using xLib.UI_Propertys;
 
-namespace DivXBootloader_WPF
+namespace Bootloader_AVR
 {
     public class CommunicationsControl
     {

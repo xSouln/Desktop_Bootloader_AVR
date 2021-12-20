@@ -1,4 +1,4 @@
-﻿using DivXBootloader_WPF.UI_Propertys;
+﻿using Bootloader_AVR.UI_Propertys;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,9 +9,9 @@ using System.Threading.Tasks;
 using xLib;
 using xLib.UI_Propertys;
 using xLibWpf.UI_Propertys;
-using static DivXBootloader_WPF.Types;
+using static Bootloader_AVR.Types;
 
-namespace DivXBootloader_WPF
+namespace Bootloader_AVR
 {  
     public static class Bootloader
     {

@@ -17,9 +17,9 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using xLib;
 using xLibWpf.UI_Propertys;
-using static DivXBootloader_WPF.Types;
+using static Bootloader_AVR.Types;
 
-namespace DivXBootloader_WPF
+namespace Bootloader_AVR
 {
     /// <summary>
     /// Логика взаимодействия для MainWindow.xaml

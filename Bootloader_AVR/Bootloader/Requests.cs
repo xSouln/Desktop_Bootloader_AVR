@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using xLib;
-using static DivXBootloader_WPF.Types;
+using static Bootloader_AVR.Types;
 
-namespace DivXBootloader_WPF
+namespace Bootloader_AVR
 {
     public static unsafe class Requests
     {

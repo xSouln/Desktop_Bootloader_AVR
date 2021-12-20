@@ -6,9 +6,9 @@ using System.Text;
 using System.Threading.Tasks;
 using xLib;
 using xLib.Sourse;
-using static DivXBootloader_WPF.Types;
+using static Bootloader_AVR.Types;
 
-namespace DivXBootloader_WPF
+namespace Bootloader_AVR
 {
     public enum RESPONSES : ushort
     {

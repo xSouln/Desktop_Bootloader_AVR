@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DivXBootloader-WPF", "DivXBootloader-WPF\DivXBootloader-WPF.csproj", "{888EC890-6CAA-4154-A1B1-EBEA616520F3}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bootloader_AVR", "Bootloader_AVR\Bootloader_AVR.csproj", "{888EC890-6CAA-4154-A1B1-EBEA616520F3}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "xLibWpf", "xLibWpf\xLibWpf.csproj", "{DEBE0863-3E66-4124-8E1A-0CB434227A5B}"
 EndProject

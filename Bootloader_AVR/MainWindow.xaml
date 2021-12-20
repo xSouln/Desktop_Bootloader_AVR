@@ -1,9 +1,9 @@
-﻿<Window x:Class="DivXBootloader_WPF.MainWindow"
+﻿<Window x:Class="Bootloader_AVR.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:DivXBootloader_WPF"
+        xmlns:local="clr-namespace:Bootloader_AVR"
         mc:Ignorable="d"
         Title="MainWindow" Height="544.554" Width="1004" Background="#FF3F3F46" FontSize="18">
     <Grid>

@@ -1,4 +1,4 @@
-﻿namespace DivXBootloader_WPF
+﻿namespace Bootloader_AVR
 {
     public class Types
     {
