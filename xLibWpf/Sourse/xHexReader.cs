@@ -9,7 +9,7 @@ namespace xLib
     public static class xHexReader
     {
         public const int CHECKSUM_SIZE = 2;
-        public const string END_ROW = "\r\n";
+        public const string END_ROW = "\n";
         public const int PREFIX_SIZE = 9;
         public const byte START_CHARECTAR = (byte)':';
 
@@ -25,16 +25,19 @@ namespace xLib
 
         public static string GetText(string hex_content, string row_separator)
         {
-            string rows = "";
+            string out_text = "";
             List<byte> data = new List<byte>();
             List<byte> data_out = new List<byte>();
-            if (row_separator == null) row_separator = "";
+            if (row_separator == null) { row_separator = ""; }
+
+            hex_content = hex_content.Replace("\r", "");
 
             for (int i = 0; i < hex_content.Length; i++)
             {
                 data.Add((byte)hex_content[i]);
 
-                if (i > 2 && hex_content[i] == END_ROW[1] && hex_content[i - 1] == END_ROW[0])
+                //if (i > 2 && hex_content[i] == END_ROW[1] && hex_content[i - 1] == END_ROW[0])
+                if (i > 1 && hex_content[i] == END_ROW[0])
                 {
                     if(data.Count > CHECKSUM_SIZE + PREFIX_SIZE + END_ROW.Length)
                     {
@@ -45,14 +48,15 @@ namespace xLib
                             data.RemoveRange(0, PREFIX_SIZE);
                             data.RemoveRange(data.Count - END_ROW.Length - CHECKSUM_SIZE, END_ROW.Length + CHECKSUM_SIZE);
 
-                            rows += Encoding.UTF8.GetString(data.ToArray()) + row_separator;
+                            out_text += Encoding.UTF8.GetString(data.ToArray()) + row_separator;
                         }
                     }
                     data.Clear();
-                }                
-            }
+                }    
+                
 
-            return rows;
+            }
+            return out_text;
         }
 
         public static int GetBin(string hex_content, byte[] flash, int pages_count, int page_size)
