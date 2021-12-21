@@ -5,7 +5,7 @@ ___
 2. [Настройка соединения](#Настройка соединения)
 3. [Загрузки прошивки](#Загрузки прошивки)
 
-## [Установка приложения](https://gitlab.adani.by:2443/rekuts/Bootloader_XRG)
+## Установка приложения
 - Загрузить актуальную версию загрузчика оп данной [ссылке](https://gitlab.adani.by:2443/rekuts/DivXBootloader-WPF/-/archive/main/DivXBootloader-WPF-main.zip?path=Bootloader_AVR/Application).
 - Распоковать архив.
 - Файл запуска приложения ../Bootloader_AVR/Application/Bootloader_AVR.exe.
