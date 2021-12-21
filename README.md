@@ -6,7 +6,7 @@ ___
 3. [Загрузка прошивки](#загрузка-прошивки)
 
 ## Установка приложения
-- Загрузить актуальную версию загрузчика оп данной [ссылке](https://gitlab.adani.by:2443/rekuts/DivXBootloader-WPF/-/archive/main/DivXBootloader-WPF-main.zip?path=Bootloader_AVR/Application).
+- Загрузить актуальную версию загрузчика по данной [ссылке](https://gitlab.adani.by:2443/rekuts/DivXBootloader-WPF/-/archive/main/DivXBootloader-WPF-main.zip?path=Bootloader_AVR/Application).
 - Распоковать архив.
 - Файл запуска приложения ../Bootloader_AVR/Application/Bootloader_AVR.exe.
 
